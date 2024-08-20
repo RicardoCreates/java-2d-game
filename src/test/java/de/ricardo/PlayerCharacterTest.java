@@ -30,4 +30,11 @@ class PlayerCharacterTest {
         PlayerCharacter.reset();
     }
 
+    @Test
+    public void testMoveRight() {
+        PlayerCharacter.move("D");
+        assertEquals(1, PlayerCharacter.getX());
+        PlayerCharacter.reset();
+    }
+
 }
