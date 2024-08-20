@@ -1,15 +1,21 @@
 package de.ricardo;
 
 public class PlayerCharacter {
-    private int x = 0;
-    private int y = 0;
+    private static int x = 0;
+    private static int y = 0;
 
-    public int getX() {
+    public static int getX() {
         return x;
     }
 
-    public int getY() {
+    public static int getY() {
         return y;
+    }
+
+    public static void move(String direction) {
+        if (direction.equals("W")) {
+            y += 1;
+        }
     }
 }
 
