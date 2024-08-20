@@ -19,6 +19,8 @@ public class PlayerCharacter {
             y -= 1;
         } else if (direction.equals("D")) {
             x += 1;
+        } else if (direction.equals("A")) {
+            x -= 1;
         }
     }
 
