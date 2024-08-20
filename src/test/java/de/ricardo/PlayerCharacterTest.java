@@ -20,6 +20,14 @@ class PlayerCharacterTest {
     public void testMoveUp() {
         PlayerCharacter.move("W");
         assertEquals(1, PlayerCharacter.getY());
+        PlayerCharacter.reset();
+    }
+
+    @Test
+    public void testMoveDown() {
+        PlayerCharacter.move("S");
+        assertEquals(-1, PlayerCharacter.getY());
+        PlayerCharacter.reset();
     }
 
 }
