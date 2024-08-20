@@ -8,14 +8,12 @@ class PlayerCharacterTest {
 
     @Test
     public void testGetX() {
-        PlayerCharacter player = new PlayerCharacter();
-        assertEquals(0, player.getX());
+        assertEquals(0, PlayerCharacter.getX());
     }
 
     @Test
     public void testGetY() {
-        PlayerCharacter player = new PlayerCharacter();
-        assertEquals(0, player.getY());
+        assertEquals(0, PlayerCharacter.getY());
     }
 
     @Test
