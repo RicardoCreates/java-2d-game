@@ -12,4 +12,10 @@ class PlayerCharacterTest {
         assertEquals(0, player.getX());
     }
 
+    @Test
+    public void testGetY() {
+        PlayerCharacter player = new PlayerCharacter();
+        assertEquals(0, player.getY());
+    }
+
 }
