@@ -13,14 +13,11 @@ public class PlayerCharacter {
     }
 
     public static void move(String direction) {
-        if (direction.equals("W")) {
-            y += 1;
-        } else if (direction.equals("S")) {
-            y -= 1;
-        } else if (direction.equals("D")) {
-            x += 1;
-        } else if (direction.equals("A")) {
-            x -= 1;
+        switch (direction) {
+            case "W" -> y += 1;
+            case "S" -> y -= 1;
+            case "D" -> x += 1;
+            case "A" -> x -= 1;
         }
     }
 
